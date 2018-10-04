@@ -2,7 +2,9 @@
   "name": "css-layout",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://liuxing.github.io/css-layout",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -10,6 +12,8 @@
     "react-scripts": "2.0.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
